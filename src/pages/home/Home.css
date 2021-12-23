@@ -1,0 +1,70 @@
+.home {
+  max-width: 1100px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 50px;
+  background: rgb(91, 81, 172);
+  background: linear-gradient(90deg, rgba(91, 81, 172, 0.9979342078628326) 1%, rgba(175, 133, 255, 1) 80%);
+  -webkit-box-shadow: -12px 9px 15px -3px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: -12px 9px 15px -3px rgba(0, 0, 0, 0.48);
+  box-shadow: -12px 9px 15px -3px rgba(0, 0, 0, 0.48);
+  transition: 0.9s;
+}
+
+.home:hover {
+  transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(11px, -12px, 0px) skew(0deg, 0deg);
+  transition: 0.9s;
+}
+
+.pic img {
+  shape-outside: circle(50%);
+  border-radius: 50%;
+  height: 270px;
+  width: 270px;
+  padding: 0 auto;
+}
+
+.text {
+  margin-left: 50px;
+}
+
+/* .about-me {
+  text-decoration: none;
+  background: rgb(95, 73, 228);
+  background: linear-gradient(180deg, rgba(95, 73, 228, 1) 0%, rgba(153, 94, 222, 1) 90%);
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 3px 10px;
+} */
+
+.about-me {
+  background-image: linear-gradient(to right, #1d2b64 0%, #f8cdda 51%, #1d2b64 100%);
+}
+.about-me {
+  padding: 5px 20px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.about-me:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .home {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
